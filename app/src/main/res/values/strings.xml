@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BarcodeReaderSample</string>
+    <string name="app_name">XpirEE</string>
 
     <!-- Strings related to MainActivity-->
     <string name="scan_barcode_button">Scan barcode</string>
@@ -11,4 +11,17 @@
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
-</resources>
+
+    <!--Strings related to bottomNavigationBar-->
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="xpiration_list">Expired Items</string>
+    <string name="qrcode">QRScanner</string>
+    <string name="options_feature">Options</string>
+
+    <!--Strings related to a grocery-list activity-->
+    <string name="grocery_list_title"></string>
+    <string name="add_item">ADD</string>
+    <string name="delete_item">DELETE</string>
+    <string name="clear_list">CLEAR</string>
+
+    </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_list"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:title="@string/xpiration_list" />
+    <item
+        android:id="@+id/navigation_QR"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:title="@string/qrcode" />
+    <item
+        android:id="@+id/navigation_options"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:title="@string/options_feature" />
+</menu>

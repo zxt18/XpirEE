@@ -20,6 +20,13 @@
         </activity>
 
         <activity
+            android:name=".SecondActivity">
+        </activity>
+
+
+
+
+        <activity
             android:name=".barcode.BarcodeCaptureActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
