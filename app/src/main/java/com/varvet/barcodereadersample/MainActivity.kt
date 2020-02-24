@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.common.api.CommonStatusCodes
 import com.google.android.gms.vision.barcode.Barcode
@@ -20,9 +21,11 @@ val Firebase.storage : FirebaseStorage get() = FirebaseStorage.getInstance("gs:/
 val storageRef= Firebase.storage.reference
 val mountainsRef = storageRef.child("groceries.txt")
 
+
+
 class MainActivity : AppCompatActivity() {
 
-
+    var qr_code=false
     private lateinit var mResultTextView: TextView
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
@@ -69,20 +72,25 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == BARCODE_READER_REQUEST_CODE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null) {
+
                     val barcode = data.getParcelableExtra<Barcode>(BarcodeCaptureActivity.BarcodeObject)
                     val path = getFilesDir()
                     val groceriesDirectory = File(path, "GROCERIES")
                     groceriesDirectory.mkdirs()
                     val file = File(groceriesDirectory, "groceries.txt")
                     val fileurl = Uri.fromFile(File(groceriesDirectory, "groceries.txt"))
-                    val content:String= barcode.displayValue
+                    var grocery_string = barcode.displayValue
                     FileOutputStream(file).use {
-                        it.write(content.toByteArray())
+                        it.write(grocery_string.toByteArray())
                         it.close()
                     }
                     val uploadTask = mountainsRef.putFile(fileurl)
                     val p = barcode.cornerPoints
-                    mResultTextView.text = barcode.displayValue
+                    qr_code=true;
+                    val intent = Intent(applicationContext,SecondActivity::class.java)
+                    intent.putExtra("grocery_items", barcode.displayValue)
+                    intent.putExtra("QR_code",qr_code)
+                    startActivity(intent)
                 } else
                     mResultTextView.setText(R.string.no_barcode_captured)
             } else

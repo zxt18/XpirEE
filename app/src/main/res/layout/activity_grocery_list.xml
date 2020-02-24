@@ -14,7 +14,7 @@
     android:padding="10dp"
         android:background="@color/BlanchedAlmond"
     android:text="Discipline Creates Lifestyle"
-    android:textColor="@color/LightGrey"
+    android:textColor="@color/black"
     android:textSize="26dp"/>
     <EditText
     android:layout_below="@id/textView"
@@ -38,7 +38,7 @@
             android:id="@+id/add"
             android:layout_width="68dp"
             android:layout_height="wrap_content"
-            android:background="@color/Aquamarine"
+            android:background="@color/Bisque"
             android:text="@string/add_item" />
 
         <Button
@@ -60,12 +60,10 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_below="@id/linearLayout1"
         android:fontFamily="sans-serif-light"
         android:gravity="center"
-        android:padding="10dp"
-        android:text="Grocery Lists"
         android:textColor="@color/Bisque"
         android:textSize="20dp" />
 
