@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1083195141610",
+    "firebase_url": "https://xpiree-a5ac6.firebaseio.com",
+    "project_id": "xpiree-a5ac6",
+    "storage_bucket": "xpiree-a5ac6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083195141610:android:c39cb100c06277c525d693",
+        "android_client_info": {
+          "package_name": "com.varvet.barcodereadersample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083195141610-omfg2e95g0u6vu18dopcv5rlcj85r3el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuzVCODjj5RKhF6CGMvl1z2FoIwglfwkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083195141610-omfg2e95g0u6vu18dopcv5rlcj85r3el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
