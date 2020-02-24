@@ -22,10 +22,11 @@ val storageRef= Firebase.storage.reference
 val mountainsRef = storageRef.child("groceries.txt")
 
 
-
 class MainActivity : AppCompatActivity() {
 
-    var qr_code=false
+    private var qr_code=false
+
+
     private lateinit var mResultTextView: TextView
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->

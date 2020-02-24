@@ -14,8 +14,8 @@
 
     <!--Strings related to bottomNavigationBar-->
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="xpiration_list">Items</string>
-    <string name="qrcode">Scanner</string>
+    <string name="xpiration_list">Expired Items</string>
+    <string name="qrcode">QRScanner</string>
     <string name="options_feature">Options</string>
 
     <!--Strings related to a grocery-list activity-->
