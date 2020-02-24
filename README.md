@@ -1,2 +1,2 @@
 # XpirEE
- Minimalistic Expiration Date Checker
+ Minimalistic Expiration Date Manager
